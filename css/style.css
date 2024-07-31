@@ -33,3 +33,37 @@ a {
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, 0.3);
   z-index: 100;
 }
+
+.nav {
+  height: 100%;
+}
+
+.nav__burger,
+.nav__close {
+  color: black;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: opacity 0.1s, transform 0.4s;
+}
+
+.nav__close {
+  opacity: 0;
+}
+
+.nav__data {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__toggle {
+  position: relative;
+  height: 32px;
+  width: 32px;
+}
